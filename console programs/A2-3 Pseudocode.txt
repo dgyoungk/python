@@ -1,0 +1,75 @@
+reading from pbnumbers.txt and storing it into a 2D list
+search through the file and display the 10 most common numbers
+and 10 least common numbers
+
+nested loops to store file contents into 2D list
+dict to hold the numbers and their frequencies
+list to hold the 10 largest frequencies (top_ten = [0] * 10)
+list to hold the 10 smallest frequencies (bott_ten = [0] * 10)
+
+dict of the 10 most common numbers (number:frequency)
+dict of the 10 least common numbers (number:frequency)
+
+function to get frequencies: pass 2D list, number to count
+	declare count var
+	loop through the 2D list to get frequency
+	return count that will be the value to frequency dict
+				with number to count as the key
+
+
+function to determine the 10 largest frequencies: pass frequency dict
+    top_ten = [0] * 10
+    for k,v in frequency.items():
+	if v > top_ten[0]:
+	    assign value to top_ten[0]
+
+	elif value < top_ten[0] and value > top_ten[1]:
+	    assign value to top_ten[1]
+
+	elif value < top_ten[1] and value > top_ten[2]:
+	    assign value to top_ten[2]
+
+	elif value < top_ten[2] and value > top_ten[3]:
+	    assign value to top_ten[3]
+
+	elif value < top_ten[3] and value > top_ten[4]:
+	    assign value to top_ten[4]
+
+	elif value < top_ten[4] and value > top_ten[5]:
+	    assign value to top_ten[5]
+
+	elif value < top_ten[5] and value > top_ten[6]:
+	    assign value to top_ten[6]
+
+	elif value < top_ten[6] and value > top_ten[7]:
+	    assign value to top_ten[7]
+
+	elif value < top_ten[7] and value > top_ten[8]:
+	    assign value to top_ten[8]
+
+	elif value < top_ten[8] and value > top_ten[9]:
+	    assign value to top_ten[9]
+
+    return top_ten
+
+
+function to determine the 10 smallest frequencies: pass frequency dict
+    bott_ten = [0] * 10
+    for k,v in frequency.items():
+	loop through the list (for num in range(len(bott_ten)):)
+   	    if value < bott_ten[num]:
+		bott_ten.append(value)
+
+    return bott_ten
+
+function to match the frequency in top/bottom 10 list with the frequency in dict: pass dict, list (either top/bottom 10)
+    declare dict to hold the 10 numbers (finalists = dict())
+    
+    loop through the dict (for k, v in frequency.items():)
+	loop through the list (for index in range(len(top/bottom 10 list)):)
+	    if v equals list[index]:
+		finalists[k] = v
+
+    return finalists
+
+
